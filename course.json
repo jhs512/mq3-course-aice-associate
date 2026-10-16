@@ -7,10 +7,10 @@
   "lessons": [
     {
       "id": "aice-data-first",
-      "title": "데이터를 고르고 비교하는 첫 실험",
+      "title": "처음 만나는 코드와 데이터 표",
       "repository": "jhs512/mq3-lesson-aice-data-first",
-      "revision": "v1.0.0",
-      "sha256": "dcc237246eece38bcfe4fe2c8fa19e595c8e8a775b96bd63bd77546dc2acc89e",
+      "revision": "v1.1.0",
+      "sha256": "bfe813e51166795ef8adaa97b03e85367336eebfedbb4e48787b05ed2a7da471",
       "prerequisites": [],
       "required": true,
       "review_enabled": false
