@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "aice-associate",
+  "title": "에이스 Associate · 작은 실험으로 분석하기",
+  "description": "공식 범위를 참고한 자체 제작 첫 수업이에요. 전체 시험 대비 과정은 이어서 보강해요.",
+  "repository": "jhs512/mq3-course-aice-associate",
+  "lessons": [
+    {
+      "id": "aice-data-first",
+      "title": "데이터를 고르고 비교하는 첫 실험",
+      "repository": "jhs512/mq3-lesson-aice-data-first",
+      "revision": "v1.0.0",
+      "sha256": "dcc237246eece38bcfe4fe2c8fa19e595c8e8a775b96bd63bd77546dc2acc89e",
+      "prerequisites": [],
+      "required": true,
+      "review_enabled": false
+    }
+  ]
+}
