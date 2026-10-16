@@ -158,6 +158,42 @@
       ],
       "required": true,
       "review_enabled": false
+    },
+    {
+      "id": "aice-regression",
+      "title": "숫자를 예측하는 기준과 모델",
+      "repository": "jhs512/mq3-lesson-aice-regression",
+      "revision": "v1.0.0",
+      "sha256": "87948eca8aefc01d49971ae8ec2362c66454cda928daa23ee60422024a9ffed9",
+      "prerequisites": [
+        "aice-scaling"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-classification",
+      "title": "종류를 예측하고 오류 읽기",
+      "repository": "jhs512/mq3-lesson-aice-classification",
+      "revision": "v1.0.0",
+      "sha256": "82a59980cbebe2cb3ebd2afb050709d5f02e2765730962fdf0e0e41cf8471917",
+      "prerequisites": [
+        "aice-regression"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-model-improvement",
+      "title": "공정하게 모델을 비교하고 개선하기",
+      "repository": "jhs512/mq3-lesson-aice-model-improvement",
+      "revision": "v1.0.0",
+      "sha256": "96c07845ff997fa070403d367a4e3d8f892c3e7ddb587863fb344e775200b0c9",
+      "prerequisites": [
+        "aice-classification"
+      ],
+      "required": true,
+      "review_enabled": false
     }
   ]
 }
