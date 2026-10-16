@@ -38,6 +38,42 @@
       ],
       "required": true,
       "review_enabled": false
+    },
+    {
+      "id": "aice-python-tools",
+      "title": "분석 코드를 읽고 이어 쓰기",
+      "repository": "jhs512/mq3-lesson-aice-python-tools",
+      "revision": "v1.0.0",
+      "sha256": "edad352a9839087cddd8f03382a900ea97f7a5fbb995ff7d567331a79dbece19",
+      "prerequisites": [
+        "aice-data-first"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-data-types",
+      "title": "CSV를 읽고 자료형 점검하기",
+      "repository": "jhs512/mq3-lesson-aice-data-types",
+      "revision": "v1.0.0",
+      "sha256": "0429446f69e26fec664aea033912f0d264f56858ae60184c475c1c36ecad6822",
+      "prerequisites": [
+        "aice-python-tools"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-row-conditions",
+      "title": "조건으로 원하는 기록 고르기",
+      "repository": "jhs512/mq3-lesson-aice-row-conditions",
+      "revision": "v1.0.0",
+      "sha256": "df151c70b42048e8cff1e38838819ac691378193893c77a15e9f9ab585410cb7",
+      "prerequisites": [
+        "aice-data-types"
+      ],
+      "required": true,
+      "review_enabled": false
     }
   ]
 }
