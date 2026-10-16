@@ -110,6 +110,54 @@
       ],
       "required": true,
       "review_enabled": false
+    },
+    {
+      "id": "aice-target-features",
+      "title": "입력 X와 정답 y 정하기",
+      "repository": "jhs512/mq3-lesson-aice-target-features",
+      "revision": "v1.0.0",
+      "sha256": "b27adeddae17ea95f19436e6763d62e17b873bc9e61880b33be85ca21fb6980d",
+      "prerequisites": [
+        "aice-data-quality"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-data-split",
+      "title": "훈련·검증·테스트를 구분하기",
+      "repository": "jhs512/mq3-lesson-aice-data-split",
+      "revision": "v1.0.0",
+      "sha256": "ad725db8f61cc58a4a10a75ab065022dffef77eb5aba907200782d89c031b86c",
+      "prerequisites": [
+        "aice-target-features"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-encoding",
+      "title": "범주를 모델 입력으로 바꾸기",
+      "repository": "jhs512/mq3-lesson-aice-encoding",
+      "revision": "v1.0.0",
+      "sha256": "aa27353ba9fbf600895237736f7bacb28949f7ccd9f368aeeb8cfb7a7b1af214",
+      "prerequisites": [
+        "aice-data-split"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-scaling",
+      "title": "훈련 자료로만 변환 기준 익히기",
+      "repository": "jhs512/mq3-lesson-aice-scaling",
+      "revision": "v1.0.0",
+      "sha256": "00759b889ca4ff2f511f6e8d657f25be614f5f5945b10baba54e8e7f8e046e36",
+      "prerequisites": [
+        "aice-encoding"
+      ],
+      "required": true,
+      "review_enabled": false
     }
   ]
 }
