@@ -43,8 +43,8 @@
       "id": "aice-python-tools",
       "title": "분석 코드를 읽고 이어 쓰기",
       "repository": "jhs512/mq3-lesson-aice-python-tools",
-      "revision": "v1.0.0",
-      "sha256": "edad352a9839087cddd8f03382a900ea97f7a5fbb995ff7d567331a79dbece19",
+      "revision": "v1.0.1",
+      "sha256": "b95706816f0128776f485cf82e8eb7989bd6bc22c19eb6cca5fcdf86af25f682",
       "prerequisites": [
         "aice-data-first"
       ],
@@ -55,8 +55,8 @@
       "id": "aice-data-types",
       "title": "CSV를 읽고 자료형 점검하기",
       "repository": "jhs512/mq3-lesson-aice-data-types",
-      "revision": "v1.0.0",
-      "sha256": "0429446f69e26fec664aea033912f0d264f56858ae60184c475c1c36ecad6822",
+      "revision": "v1.0.1",
+      "sha256": "61b9c59c461454f1c7f1889bf4fd85768155886fee0e05d4aa57b82071bfb288",
       "prerequisites": [
         "aice-python-tools"
       ],
@@ -67,10 +67,46 @@
       "id": "aice-row-conditions",
       "title": "조건으로 원하는 기록 고르기",
       "repository": "jhs512/mq3-lesson-aice-row-conditions",
-      "revision": "v1.0.0",
-      "sha256": "df151c70b42048e8cff1e38838819ac691378193893c77a15e9f9ab585410cb7",
+      "revision": "v1.0.1",
+      "sha256": "4b3e72f762bb6504307fb3c14629813d1860cc632035daa7a5385ea0114d3108",
       "prerequisites": [
         "aice-data-types"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-data-summary",
+      "title": "개수·분포·그룹별 비교",
+      "repository": "jhs512/mq3-lesson-aice-data-summary",
+      "revision": "v1.0.0",
+      "sha256": "6cfecd505ec6fb93a88abcb10c93f0f08488594390ed35cd43045b7afc91b965",
+      "prerequisites": [
+        "aice-row-conditions"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-visualization",
+      "title": "그래프로 분포와 관계 확인하기",
+      "repository": "jhs512/mq3-lesson-aice-visualization",
+      "revision": "v1.0.0",
+      "sha256": "5521c68fca929055b665d157a6ad70c45f0504aef07eba9707024df7fdd7fff5",
+      "prerequisites": [
+        "aice-data-summary"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-data-quality",
+      "title": "빈칸·중복·이상치 진단하기",
+      "repository": "jhs512/mq3-lesson-aice-data-quality",
+      "revision": "v1.0.0",
+      "sha256": "b9f47232cad227eaa0d7e4b82e6b94e9d07d94dcb2fa4aa1635bc663e0b6bd67",
+      "prerequisites": [
+        "aice-visualization"
       ],
       "required": true,
       "review_enabled": false
