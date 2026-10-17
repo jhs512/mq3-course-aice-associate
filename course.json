@@ -64,13 +64,25 @@
       "review_enabled": false
     },
     {
+      "id": "aice-data-join",
+      "title": "여러 파일을 읽어 하나의 표로",
+      "repository": "jhs512/mq3-lesson-aice-data-join",
+      "revision": "v1.0.0",
+      "sha256": "4b7aa66bf29086f5eaee8f9ba2c0bfbfe990fe0133539a8d9806af1cf5949a56",
+      "prerequisites": [
+        "aice-data-types"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
       "id": "aice-row-conditions",
       "title": "조건으로 원하는 기록 고르기",
       "repository": "jhs512/mq3-lesson-aice-row-conditions",
       "revision": "v1.0.1",
       "sha256": "4b3e72f762bb6504307fb3c14629813d1860cc632035daa7a5385ea0114d3108",
       "prerequisites": [
-        "aice-data-types"
+        "aice-data-join"
       ],
       "required": true,
       "review_enabled": false
@@ -79,8 +91,8 @@
       "id": "aice-data-summary",
       "title": "개수·분포·그룹별 비교",
       "repository": "jhs512/mq3-lesson-aice-data-summary",
-      "revision": "v1.0.0",
-      "sha256": "6cfecd505ec6fb93a88abcb10c93f0f08488594390ed35cd43045b7afc91b965",
+      "revision": "v1.0.1",
+      "sha256": "ba2d81bfa3c71a9c36471ddb596e049c88e63f6b1a76a70dd5419ecb56aaf14a",
       "prerequisites": [
         "aice-row-conditions"
       ],
@@ -191,6 +203,90 @@
       "sha256": "96c07845ff997fa070403d367a4e3d8f892c3e7ddb587863fb344e775200b0c9",
       "prerequisites": [
         "aice-classification"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-xgboost",
+      "title": "XGBoost로 회귀·분류하기",
+      "repository": "jhs512/mq3-lesson-aice-xgboost",
+      "revision": "v1.0.0",
+      "sha256": "29ead32c7e5a6ca63db3cd5dbd770a8d650cf93c79d19624c3b5e86859a04e93",
+      "prerequisites": [
+        "aice-model-improvement"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-regression-project",
+      "title": "회귀 분석을 처음부터 끝까지",
+      "repository": "jhs512/mq3-lesson-aice-regression-project",
+      "revision": "v1.0.0",
+      "sha256": "9d3183ed1522f52d407d3f770cea35f03afae23fc401736eddd19026e7261019",
+      "prerequisites": [
+        "aice-xgboost"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-classification-project",
+      "title": "분류 분석을 처음부터 끝까지",
+      "repository": "jhs512/mq3-lesson-aice-classification-project",
+      "revision": "v1.0.0",
+      "sha256": "9659abf72cb938bfc75abb34fa0a9c7d4ca368a8e561937c07d766c66b18cb2a",
+      "prerequisites": [
+        "aice-regression-project"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-exam-workflow",
+      "title": "노트북·파일·제한적 참고자료 사용",
+      "repository": "jhs512/mq3-lesson-aice-exam-workflow",
+      "revision": "v1.0.0",
+      "sha256": "5dbc05beaae0cdbd6d00d0ed6cc3d565442834dfe9ed7df7825365e06ddb2f31",
+      "prerequisites": [
+        "aice-classification-project"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-mock-a",
+      "title": "자체 실전 모의 A",
+      "repository": "jhs512/mq3-lesson-aice-mock-a",
+      "revision": "v1.0.0",
+      "sha256": "6b9d8820cddf53941845ff2c1d1280072e49ed2a0b1e3c182973ea6bfa71d308",
+      "prerequisites": [
+        "aice-exam-workflow"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-mock-b",
+      "title": "자체 실전 모의 B",
+      "repository": "jhs512/mq3-lesson-aice-mock-b",
+      "revision": "v1.0.0",
+      "sha256": "820ee4877ab25d9be0762b31affef563c36f5bdc1b7f81a17b410f284042fba0",
+      "prerequisites": [
+        "aice-mock-a"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-mock-c",
+      "title": "자체 실전 모의 C·약점 재확인",
+      "repository": "jhs512/mq3-lesson-aice-mock-c",
+      "revision": "v1.0.0",
+      "sha256": "f103d15d6e9000d57d0ce20faad6f7a3c0fec55d47e1e04d1d6bd4d88499d4d7",
+      "prerequisites": [
+        "aice-mock-b"
       ],
       "required": true,
       "review_enabled": false
