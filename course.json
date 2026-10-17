@@ -220,13 +220,37 @@
       "review_enabled": false
     },
     {
+      "id": "aice-neural-network",
+      "title": "신경망의 입력과 출력 맞추기",
+      "repository": "jhs512/mq3-lesson-aice-neural-network",
+      "revision": "v1.0.0",
+      "sha256": "fc2a14333a89868f9429835820a958ee78bae3fbc5385983325c0d438f578413",
+      "prerequisites": [
+        "aice-xgboost"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
+      "id": "aice-training-control",
+      "title": "학습 곡선과 일반화 개선하기",
+      "repository": "jhs512/mq3-lesson-aice-training-control",
+      "revision": "v1.0.0",
+      "sha256": "a4af32f21a7530156fc3a9c5b915d6404e0512c11ce4ac7576cea16e55d28e51",
+      "prerequisites": [
+        "aice-neural-network"
+      ],
+      "required": true,
+      "review_enabled": false
+    },
+    {
       "id": "aice-regression-project",
       "title": "회귀 분석을 처음부터 끝까지",
       "repository": "jhs512/mq3-lesson-aice-regression-project",
       "revision": "v1.0.0",
       "sha256": "9d3183ed1522f52d407d3f770cea35f03afae23fc401736eddd19026e7261019",
       "prerequisites": [
-        "aice-xgboost"
+        "aice-training-control"
       ],
       "required": true,
       "review_enabled": false
